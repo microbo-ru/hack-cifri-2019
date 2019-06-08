@@ -38,9 +38,6 @@
 
 
         window.osme.geoJSON('RU-SPE', {lang: 'ru'}, function (data) {
-          window.t = JSON.stringify(data);
-          console.log(data);
-          // var collection = osme.toLeaflet(data, ymaps);
           var collection = osme.toLeaflet(data)
           collection.add(theMap);
 
