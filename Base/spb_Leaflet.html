@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Saint-Petersburg</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" type="text/css" href="/index.css">
+  </head>
+
+  <body>
+    <div class="header">
+        <h2>Saint-Petersburg</h2>
+    </div>
+    <div class="container">
+        <div id="map"></div>
+    </div>
+
+    <!-- leaflet -->
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"></script>
+
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <script src="https://unpkg.com/osme"></script>
+
+    <!-- Demo setup -->
+    <script>
+        var theMap = L.map('map', {maxZoom: 14});
+        theMap.attributionControl.addAttribution('Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Map data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>');
+
+        L.tileLayer('http://tile.stamen.com/terrain/{z}/{x}/{y}.png').addTo(theMap);
+        // center of madrid
+        theMap.setView([59.969718, 30.316536], 10);
+
+
+        window.osme.geoJSON('RU-SPE', {lang: 'ru'}, function (data) {
+          window.t = JSON.stringify(data);
+          console.log(data);
+          // var collection = osme.toLeaflet(data, ymaps);
+          var collection = osme.toLeaflet(data)
+          collection.add(theMap);
+
+          theMap.setBounds(collection.collection.getBounds(), {duration: 300});
+          
+          var strokeColors = [
+              '#000',
+              '#F0F',
+              '#00F',
+              '#0FF',
+          ];
+          var meta = data.metaData,
+              maxLevel = meta.levels[1] + 1;
+              
+          // colorize the collection    
+          collection.setStyles(function (object, yobject) {
+              var level = object.properties.level;
+              return ({
+                  zIndex: level,
+                  zIndexHover: level,
+                  strokeWidth: Math.max(1, level == 2 ? 2 : (maxLevel - level)),
+                  strokeColor: strokeColors[maxLevel - level] || '#000',
+                  fillColor: '#FFE2',
+              });
+          });
+        });
+
+    </script>
+
+  </body>
+</html>

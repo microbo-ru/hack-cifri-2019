@@ -1,0 +1,102 @@
+body {
+            font-family: sans-serif;
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+        }
+        .container {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+        }
+        .header {
+            position: absolute;
+            top: -8px;
+            left: 0px;
+            padding-left: 50px;
+            right: 0;
+            padding: 10px;
+            z-index: 1000;
+            background-color: rgba(255,255,255,0.75);
+        }
+        h2 {
+            margin: 10px 0;
+            margin-left: 50px;
+        }
+        h3 {
+            margin: 0;
+        }
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+
+        #property-list, #playback {
+            display: inline-block;
+        }
+
+        .view {
+            display: inline-block;
+            font-size: 12px;
+            border: 1px solid black;
+            border-radius: 3px;
+            margin: 3px;
+            padding: 4px;
+            background: #ffab96;
+        }
+
+        .view:hover {
+            background: dodgerblue;
+            color: white;
+            margin-top: -2px;
+            box-shadow: 1px 1px 1px black;
+        }
+
+        .view:active {
+            margin-top: -2px;
+        }
+
+        #playback {
+            margin-right: 1em;
+            margin-left: 1em;
+        }
+
+        #playback .view {
+            background-color: #ab96ff;
+        }
+
+        .view.selected {
+            background: white;
+            color: black;
+        }
+
+        #datepicker {
+            margin-left: 50px;
+            font-size: 12px;
+        }
+
+        .flatpickr-minute {
+            pointer-events: none;
+        }
+
+        .flatpickr-minute + .arrowUp {
+            pointer-events: none;
+        }
+
+        .flatpickr-minute + .arrowUp + .arrowDown {
+            pointer-events: none;
+        }
+
+        .numInputWrapper:nth-child(3):hover {
+            background: none;
+        }
+
+        .numInputWrapper:nth-child(3):hover .arrowUp {
+            display: none;
+        }
+
+        .numInputWrapper:nth-child(3):hover .arrowDown {
+            display: none;
+        }
