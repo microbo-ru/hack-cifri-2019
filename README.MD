@@ -83,7 +83,22 @@ Looks good:
 
 ## Web APP
 
+Web App is the main application. It utilizes all the features we have:
+ - [x] Support for different sources
+ - [x] Representing Values over the regions
+ - [x] Zoom into the Region with extended information
+ - [ ] Combine data from different sources on the same map
+ - [ ] Corellation analysis
+
+![](./docs/hack_app_country_view.png)
+
+![](./docs/hack_app_region_view.png)
+
 ## Mobile App
+
+An andoid App  was developed. It uses Here Maps under the hood.
+![](./docs/hack_app_android_country_view.jpg) ![](./docs/hack_app_android_region_view.jpg)
+
 
 # Achiviements
  - Open Source. Solution is based on 
