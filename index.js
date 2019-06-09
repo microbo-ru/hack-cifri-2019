@@ -77,6 +77,7 @@ ymaps.ready(function() {
 
       collection.setStyles(function(object, yobject) {
         var level = object.properties.level;
+        // console.log(object);
         yobject.properties.set('balloonContent', "<div style=''>" + JSON.stringify(object.properties).split(',').join(", ") + "</div>");
         return ({
           zIndex: level,
