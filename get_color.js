@@ -1,6 +1,7 @@
 var heatmap = {}
 $.getJSON("heatmap.json", function(json) {
   heatmap = json;
+
 });
 
 var get_color = function(t) {
