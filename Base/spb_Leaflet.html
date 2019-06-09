@@ -37,7 +37,8 @@
         theMap.setView([59.969718, 30.316536], 10);
 
 
-        window.osme.geoJSON('RU-SPE', {lang: 'ru'}, function (data) {
+        window.osme.geoJSON('RU', {lang: 'ru'}, function (data) {
+          
           var collection = osme.toLeaflet(data)
           collection.add(theMap);
 
