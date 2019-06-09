@@ -58,9 +58,12 @@ We were able to add polygons with St. Petersburg disctricts using XYZ studio. It
     - --> but you can place every polygon on its own layer and then colorize the layer
  2. if you need to interact 
 
-### Custom polygins for St. Petersburg
+Other options to consider: https://tcs.ext.here.com/examples/v3/admin_boundaries_batch
+
+### Custom polygons for St. Petersburg
 Finally we developed our owns polygon layers for Russia territories. This is geojson, that can be used with Here XYZ, or Here js api.
 Looks good:
+
 ![Custom polygons for St. Petersburg](./docs/here_xyz_spb_disctricts.png)
 
 
