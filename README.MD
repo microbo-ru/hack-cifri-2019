@@ -76,10 +76,22 @@ Looks good:
  - [x] mobile app
  - [ ] Easy intergartion with services
 
-## Business solution
-
 ## Architecture
+
+## Business solution
+// TBD
+
+## Web APP
+
+## Mobile App
 
 # Achiviements
  - Open Source. Solution is based on 
  - geojson for Russia 
+
+# Our team
+ - Svetlana Ulianova (business-analyst)
+ - Nadezhda Stukalina (design & marketing)
+ - Vladimir Kocheryzhkin (Maps development)
+ - Grigory Rubtsov (android development)
+ - Aleksandr Davydenko (architecture,  open data R&D)
