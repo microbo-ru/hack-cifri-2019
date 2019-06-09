@@ -76,16 +76,6 @@ ymaps.ready(function() {
       var meta = data.metaData,
         // minLevel = meta.levels[0],
         maxLevel = meta.levels[1] + 1;
-      var resolve_c = function(t) {
-        // console.log(t.properties.name);
-        if (t.properties.name === 'Кировский район') {
-          return '#44BB22';
-        } else if (t.properties.name === 'Красносельский район') {
-          return '#440000';
-        } else {
-          return '#FFE2';
-        }
-      };
 
       collection.setStyles(function(object, yobject) {
         var level = object.properties.level;
@@ -95,7 +85,7 @@ ymaps.ready(function() {
           zIndexHover: level,
           strokeWidth: Math.max(1, level == 2 ? 2 : (maxLevel - level)),
           strokeColor: strokeColors[maxLevel - level] || '#000',
-          fillColor: resolve_c(object),
+          fillColor: get_color(object),
           balloonPanelMaxMapArea: Infinity,
           balloonAutoPan: false,
           autoPanDuration: 5000,
