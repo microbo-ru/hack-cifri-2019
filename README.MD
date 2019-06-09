@@ -64,7 +64,7 @@ Other options to consider: https://tcs.ext.here.com/examples/v3/admin_boundaries
 Finally we developed our owns polygon layers for Russia territories. This is geojson, that can be used with Here XYZ, or Here js api.
 Looks good:
 
-![Custom polygons for St. Petersburg](./docs/here_xyz_spb_disctricts.png)
+![Custom polygons for St. Petersburg](./docs/here_xyz_spb_districts..png)
 
 
 # Results & Solution
