@@ -1,4 +1,5 @@
 # The Task
+====================
 
 There are a lot of data sources over the web. In Russia we have a list of gov. services, backed by the municipal, public authorities, big companies etc.
 Some of the examples are:
@@ -14,7 +15,8 @@ Some of the examples are:
 This task 
 
 
-# R&D completed
+# R&D section
+====================
 
 ## Used Dataset
 We are interested in Ecology & Healthcare domain.
@@ -38,16 +40,26 @@ Here Maps provides very nice design out-of the box. It even has very good exampl
  - There are no polyfils
 
 
-
-### Geovizualization
-
 ### Here XYZ
+
+![Was trying to run the project on XYZ](./docs/here_xyz_projects.png)
 
 Here maps provides a cloud-based tool for developing geo-based applications
 
-**Note**: Later experts from Here gave us a hint - we should not treat 
+**Note**: you should consider XYZ for the following usecases only (from out perspective):
+ 1. XYZ as a datastore. It can handle you geo- data, it can query the maps, it can provide an access to the objects (on the layers) by access tokens. So it seems to be a very handy to manage the data, when you incorporate it into another app
+ 2. XYZ as a RAD tool (= rapid appliaction development). It produces really beautiful apps, with no code at all, or avery little usage of it.
 
-# Solution
+### Here Geovizualization
+There are several techniques how to vizualize the regions/polygons.
+// TBD
+We were able to add polygons with St. Petersburg disctricts using XYZ studio. It works fine. But it was not satisfied out needs:
+ 1. you cannot control the color of the individual polygin on the sme layer
+    - --> but you can place every polygon on its own layer and then colorize the layer
+ 2. if you need to interact 
+
+# Results & Solution
+===================
 
 ## Features
  - [x] Enable Map visualization
