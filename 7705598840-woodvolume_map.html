@@ -8,10 +8,8 @@
     <script type="text/javascript" src="http://yandex.st/jquery/1.8.2/jquery.min.js"></script>
     <script type="text/javascript" src="http://kashey.ru/maps/regions.js?1"></script>
     <script type="text/javascript">
-       $(function() {
-            //todo: used inside get_color.js to resolve colored file name
-            // window.title = "heatmap.json";
-            load_heat_map("heatmap.json");
+        $(function() {
+            load_heat_map("7705598840-woodvolume_map.json");
        });
     </script>
     <script type="text/javascript" src="get_color.js"></script>
@@ -20,11 +18,10 @@
 </head>
 <body>
     <h2>
-        Площадь и объем выполненных санитарно-оздоровительных мероприятий
-        (<a href="https://data.gov.ru/opendata/7705598840-sanitationactivities">источник</a>)
+        Объем заготовленной древесины (тысяча кубических метров) 
+        <a href="https://data.gov.ru/opendata/7705598840-woodvolume">(источник)</a>
     </h2>
     <table width=100% height=800>
-        
     <tr valign=top>
         <td width="280">
             <div class="regionList"></div>
