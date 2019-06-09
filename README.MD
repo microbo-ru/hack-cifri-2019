@@ -32,11 +32,20 @@ Some sites provide their own notations for data (e.g. data.gov.ru), it has a sel
 
 ### Here Maps
 
+![Here maps out of the box](./docs/here_maps_visualize_overcountry.png)
+https://developer.here.com/api-explorer-examples/lens-template-v-1-2-3/examples/choropleth-country-gdp-geojson/
+Here Maps provides very nice design out-of the box. It even has very good examples on how to prepare a layer with countries colored. Unfortunatelly we faced with issues:
+ - There are no polyfils
+
+
+
 ### Geovizualization
 
 ### Here XYZ
 
 Here maps provides a cloud-based tool for developing geo-based applications
+
+**Note**: Later experts from Here gave us a hint - we should not treat 
 
 # Solution
 
