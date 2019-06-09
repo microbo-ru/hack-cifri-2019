@@ -97,8 +97,11 @@ Web App is the main application. It utilizes all the features we have:
 ## Mobile App
 
 An andoid App  was developed. It uses Here Maps under the hood.
-![](./docs/hack_app_android_country_view.jpg) ![](./docs/hack_app_android_region_view.jpg)
+![](./docs/hack_app_android_country_view_small.png) ![](./docs/hack_app_android_region_view_small.png)
 
+## Demo
+
+[![](http://img.youtube.com/vi/EnoyALfc-oo/0.jpg)](http://www.youtube.com/watch?v=EnoyALfc-oo "Hack'19 Microbo Demo")
 
 # Achiviements
  - Open Source. Solution is based on 
