@@ -19,7 +19,6 @@ ymaps.ready(function() {
       (function(i) {
 
         var name = depth[i];
-        // console.log(i, name)
         var oname = names[name] || name;
 
         var l = $("<a href='#'>" + oname + "</a>");
@@ -46,7 +45,6 @@ ymaps.ready(function() {
         if (data.features[i].properties.properties.iso3166) {
           iso = ' (' + data.features[i].properties.properties.iso3166 + ')';
         }
-        // console.log(data.features[i]);
         list.push("<li>" + data.features[i].properties.name + iso + "</li>");
         if (data.features[i].properties.osmId == thisId) {
           names[addr] = data.features[i].properties.name;
