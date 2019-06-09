@@ -92,7 +92,7 @@ Web App is the main application. It utilizes all the features we have:
  - [x] Representing Values over the regions
  - [x] Zoom into the Region with extended information
  - [ ] Combine data from different sources on the same map
- - [ ] Corellation analysis
+ - [ ] Correlation analysis
 
 ![](./docs/hack_app_country_view.png)
 
