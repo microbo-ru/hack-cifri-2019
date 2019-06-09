@@ -5,7 +5,6 @@ $.getJSON("heatmap.json", function(json) {
 
 var get_color = function(t) {
   var key = t.properties.name;
-  print(key);
   if (key in heatmap) {
     return heatmap[key];
   } else {
