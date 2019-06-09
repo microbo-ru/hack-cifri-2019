@@ -78,6 +78,8 @@ Looks good:
 
 ## Architecture
 
+![](./docs/further_architecture.png)
+
 ## Business solution
 // TBD
 
