@@ -97,6 +97,7 @@ Web App is the main application. It utilizes all the features we have:
 ## Mobile App
 
 An andoid App  was developed. It uses Here Maps under the hood.
+
 ![](./docs/hack_app_android_country_view_small.png) ![](./docs/hack_app_android_region_view_small.png)
 
 ## Demo
