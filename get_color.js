@@ -1,7 +1,6 @@
 var heatmap = {}
 $.getJSON("heatmap.json", function(json) {
   heatmap = json;
-
 });
 
 var get_color = function(t) {
@@ -12,7 +11,7 @@ var get_color = function(t) {
     if ("default" in heatmap) {
       return heatmap["default"];
     } else {
-      return '#FFE2';
+      return "#FFF";
     }
   }
 };

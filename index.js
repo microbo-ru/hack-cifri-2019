@@ -87,7 +87,7 @@ ymaps.ready(function() {
           balloonPanelMaxMapArea: Infinity,
           balloonAutoPan: false,
           autoPanDuration: 5000,
-          draggable: true
+          draggable: false
         });
       });
 
@@ -107,7 +107,7 @@ ymaps.ready(function() {
     });
   }
 
-  load('RU-SPE');
+  load('RU');
   window.rload = load;
 
 });
